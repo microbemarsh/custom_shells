@@ -9,4 +9,4 @@ This is a collection of shell scripts I produce and use in the analysis of bacte
   This script will loop through multiple metagenomic contigs in fasta format and use [waafle](https://github.com/biobakery/waafle/ "waafle") to identify lateral gene transfer events.
 
 * amrloop.sh
-  This will loop through multiple metagenomic contigs as well multiple databases and attempt to find antimicrobial resistance (AMR) genes using the tool [abricate](https://github.com/tseemann/abricate "abricate"), it in the future will incorporate possible AMR prediction with the tool [RGI](https://github.com/arpcard/rgi "RGI"). The loop will take your outputs and create an interactive "hamronized" output in the end.
+  This will loop through multiple metagenomic contigs as well multiple databases and attempt to find antimicrobial resistance (AMR) genes using the tool [abricate](https://github.com/tseemann/abricate "abricate"), it in the future will incorporate possible AMR prediction with the tool [RGI](https://github.com/arpcard/rgi "RGI"). The loop will take your outputs and create an interactive "hamronized" output in the end. Still a work in progress.
