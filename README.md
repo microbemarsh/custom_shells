@@ -1,5 +1,3 @@
-# fun_shell_scripts
-
 This is a collection of shell scripts I produce and use in the analysis of bacterial metagenomic data. I currently use all of these within a SLURM HPC.
 
 * 16S.sh
