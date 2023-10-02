@@ -1,7 +1,6 @@
 # fun_shell_scripts
-# I currently use all of these within a SLURM HPC
 
-This is a collection of shell scripts I produce and use in the analysis of bacterial metagenomic data. 
+This is a collection of shell scripts I produce and use in the analysis of bacterial metagenomic data. I currently use all of these within a SLURM HPC.
 
 * 16S.sh
   This will perform chopper [chopper](https://github.com/wdecoster/chopper/ "chopper") trimming and [emu](https://gitlab.com/treangenlab/emu/ "emu") abundance estimations on gzipped fastq files from ONT nanopore sequence data. I generally will use a shell script to perform the seqkit scat step prior to this so I can rename my samples individually.
