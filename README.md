@@ -1,7 +1,7 @@
 This is a collection of shell scripts I produced and use in the analysis of bacterial metagenomic data. I currently use all of these within a SLURM HPC.
 
 * [16S.sh](https://github.com/microbemarsh/custom_shells/blob/main/16S.sh/ "16S.sh")
-  will perform chopper [chopper](https://github.com/wdecoster/chopper/ "chopper") trimming and [emu](https://gitlab.com/treangenlab/emu/ "emu") abundance estimations on gzipped fastq files from ONT nanopore sequence data. I generally will use a shell script to perform the seqkit scat step prior to this so I can rename my samples individually.
+  will perform everything from [fast5 --> pod5](https://github.com/nanoporetech/pod5-file-format/blob/master/python/pod5/README.md#pod5-convert-fast5) file conversion, [dorado](https://github.com/nanoporetech/dorado) basecalling, trimming primers and barcodes with [porechop](https://github.com/rrwick/Porechop), filtering reads with chopper [chopper](https://github.com/wdecoster/chopper/ "chopper") and finally [emu](https://gitlab.com/treangenlab/emu/ "emu") abundance estimations with both the Emu and RDP databases. This was intended for use with ONT nanopore 16S sequence data and the only inputs are the fast5 files from your sequencing run. You must input your new file names into the script before running, that is the only manual part of the pipeline.
 
 * [hgtloop.sh](https://github.com/microbemarsh/custom_shells/blob/main/hgtloop.sh/ "hgtloop.sh")
   will loop through multiple metagenomic contigs in fasta format and use [waafle](https://github.com/biobakery/waafle/ "waafle") to identify lateral gene transfer events.
